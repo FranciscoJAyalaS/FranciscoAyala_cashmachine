@@ -1,0 +1,8 @@
+acme_task:
+    resource: "@AcmeTaskBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_cashmachine:
+    resource: "@AcmeCashmachineBundle/Resources/config/routing.yml"
+    prefix:   /
+

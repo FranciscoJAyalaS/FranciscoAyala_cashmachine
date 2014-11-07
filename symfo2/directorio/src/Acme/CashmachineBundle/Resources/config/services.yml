@@ -1,0 +1,4 @@
+services:
+#    acme_cashmachine.example:
+#        class: Acme\CashmachineBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

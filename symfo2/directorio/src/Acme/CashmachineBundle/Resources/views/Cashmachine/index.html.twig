@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+			<title>Free Cash Machine!</title>
+			
+			    {% block stylesheets %}
+				<link href="{{ asset('bundles/Cashmachine/css/cashmachine.css') }}" type="text/css" rel="stylesheet" />
+				{% endblock %}
+			
+			
+		
+        </head>
+        <body>
+			<h3>Welcome to Cash Machine!</h3>
+			<form action="{{ url }}" method="post">
+				<div class = "screen">
+					<p>Please, count your money!:</p>
+					 {% if given[0] != 0  %}
+					<p>$100 x {{given[0]}}</p>
+					{% endif %}
+					{% if given[1] != 0 %}
+					<p>$50 x {{given[1]}}</p>
+					{% endif %}
+					{% if given[2] != 0 %}
+					<p>$20 x {{given[2]}}</p>
+					{% endif %}
+					{% if given[3] != 0 %}
+					<p>$10 x {{given[3]}}</p>
+					{% endif %}
+					
+				</div>
+				<div class = "keyboard">
+					 <p>Type the amount of money you desire to draw out: </p>
+					 <p><input type="text" name="howmuch" id="howmuch" value="{{requested_money}}">
+					 <br>
+					 <br>
+					<input type="submit" value="Request"></p>
+				</div>
+			</form>
+		</body>
+</html>
+
+
+
+
+
