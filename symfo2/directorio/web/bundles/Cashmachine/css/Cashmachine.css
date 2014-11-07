@@ -1,0 +1,19 @@
+.screen {
+	border-style: solid;
+	border-color: #0000ff;
+	width: 200px;
+	height: 200px;
+	margin-left: 50px;
+}
+	
+.keyboard {
+	border-style: solid;
+	border-color: #000000;
+	width: 200px;
+	height: 200px;
+	margin-left: 50px;
+}
+	
+p {
+	margin-left: 10px;
+}
